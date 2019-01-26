@@ -1,0 +1,32 @@
+body {
+ font-family: 'Avenir', sans-serif;
+}
+
+header {
+  padding: 14px 16px;
+}
+.logo {
+  float: left;
+  padding: 14px 16px;
+}
+ul.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  float: right;
+}
+li.navigation-item {
+  float: left
+}
+li.navigation-item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navigation-item a:hover {
+  border-bottom: 2px solid #888;
+}
