@@ -1,0 +1,52 @@
+body {
+ font-family: 'Avenir', sans-serif;
+}
+
+header {
+  padding: 14px 16px;
+  background-color: #f9f9ff;
+  height: 50px;
+}
+.logo {
+  float: left;
+  padding: 14px 16px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #61c67a;
+}
+ul.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  float: right;
+}
+li.navigation-item {
+  float: left
+}
+li.navigation-item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navigation-item a:hover{
+  border-bottom: 2px solid #888;
+  color:#6eddaf
+}
+
+li.navigation-item a:active{
+  color:#6eddaf
+}
+section.section-about {
+  padding: 10%;
+ background-color: #c4c4c4
+}
+button.findOut-about {
+  border-style: solid;
+  border-width: thin;
+  background-color: #61c67a;
+  padding: 10px
+}
