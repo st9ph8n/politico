@@ -55,7 +55,12 @@ body {
    background-color: #61c67a;
    padding: 10px
  }
- section.section-login,section.section-signUp,section.section-editParty,section.section-createParty {
+ section.section-login,
+ section.section-signUp,
+ section.section-editParty,
+ section.section-createParty,
+ section.section-resetPassword
+  {
    margin-top: 50px
  }
  
@@ -76,7 +81,10 @@ body {
    margin-left: 20px
  }
  
- .signUp-container,.editParty-container,.createParty-container  {
+ .signUp-container,
+ .editParty-container,
+ .createParty-container,
+ .resetPassword-container{
    max-width: 400px;
    padding: 10px;
    width: 100%;
@@ -112,6 +120,9 @@ body {
    margin-bottom: 10px;
    margin-left:5px;
  
+ }
+ button#resetPassword{
+   width:50%
  }
  .signUp-form input {
    margin: 0 0 10px;
