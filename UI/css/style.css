@@ -62,7 +62,8 @@ body {
  section.section-resetPassword,
  section.section-createGovtoffice,
  section.section-ApplyCandidacy,
- section.section-viewPoliticalParties
+ section.section-viewPoliticalParties,
+ section.section-viewCandidatesRunning
   {
    margin-top: 50px
  }
@@ -93,7 +94,6 @@ body {
    border-collapse: collapse;
    width: 80%;
    height: 80%;
-
  }
  table td img {
   border: 3px;
@@ -110,7 +110,8 @@ body {
  .resetPassword-container,
  .createGovtoffice-container,
  .ApplyCandidacy-container,
- .viewPoliticalParties-container
+ .viewPoliticalParties-container,
+ .viewCandidatesRunning-container
  {
    max-width: 400px;
    padding: 10px;
