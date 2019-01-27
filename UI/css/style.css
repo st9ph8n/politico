@@ -61,7 +61,8 @@ body {
  section.section-createParty,
  section.section-resetPassword,
  section.section-createGovtoffice,
- section.section-ApplyCandidacy
+ section.section-ApplyCandidacy,
+ section.section-viewPoliticalParties
   {
    margin-top: 50px
  }
@@ -87,6 +88,18 @@ body {
    text-align: center
  }
 
+ table,th,td {
+   border:1px solid black;
+   border-collapse: collapse;
+   width: 80%;
+   height: 80%;
+
+ }
+ table td img {
+  border: 3px;
+   height: 60px ;
+   width: 130px; 
+ }
  textarea.applycandidate{
    text-align: left;
    margin-bottom: 15px;
@@ -96,7 +109,8 @@ body {
  .createParty-container,
  .resetPassword-container,
  .createGovtoffice-container,
- .ApplyCandidacy-container
+ .ApplyCandidacy-container,
+ .viewPoliticalParties-container
  {
    max-width: 400px;
    padding: 10px;
