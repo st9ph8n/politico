@@ -60,7 +60,8 @@ body {
  section.section-editParty,
  section.section-createParty,
  section.section-resetPassword,
- section.section-createGovtoffice
+ section.section-createGovtoffice,
+ section.section-ApplyCandidacy
   {
    margin-top: 50px
  }
@@ -81,12 +82,21 @@ body {
    text-align: right;
    margin-left: 20px
  }
- 
+ select.ApplyCandidacy{
+   width: 60%;
+   text-align: center
+ }
+
+ textarea.applycandidate{
+   text-align: left;
+   margin-bottom: 15px;
+ }
  .signUp-container,
  .editParty-container,
  .createParty-container,
  .resetPassword-container,
- .createGovtoffice-container
+ .createGovtoffice-container,
+ .ApplyCandidacy-container
  {
    max-width: 400px;
    padding: 10px;
