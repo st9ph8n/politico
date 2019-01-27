@@ -64,7 +64,8 @@ body {
  section.section-ApplyCandidacy,
  section.section-viewPoliticalParties,
  section.section-viewCandidatesRunning,
- section.section-votepage
+ section.section-votepage,
+ section.section-Profile
   {
    margin-top: 50px
  }
@@ -95,6 +96,7 @@ body {
    border-collapse: collapse;
    width: 80%;
    height: 80%;
+   margin-bottom: 20px;
  }
  table td img {
   border: 3px;
@@ -117,7 +119,8 @@ body {
  .ApplyCandidacy-container,
  .viewPoliticalParties-container,
  .viewCandidatesRunning-container,
- .votepage-container
+ .votepage-container,
+ .Profile-container
  {
    max-width: 400px;
    padding: 10px;
