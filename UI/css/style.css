@@ -63,7 +63,8 @@ body {
  section.section-createGovtoffice,
  section.section-ApplyCandidacy,
  section.section-viewPoliticalParties,
- section.section-viewCandidatesRunning
+ section.section-viewCandidatesRunning,
+ section.section-votepage
   {
    margin-top: 50px
  }
@@ -100,6 +101,10 @@ body {
    height: 60px ;
    width: 130px; 
  }
+ table td button {
+  background: #61c67a;
+ }
+
  textarea.applycandidate{
    text-align: left;
    margin-bottom: 15px;
@@ -111,7 +116,8 @@ body {
  .createGovtoffice-container,
  .ApplyCandidacy-container,
  .viewPoliticalParties-container,
- .viewCandidatesRunning-container
+ .viewCandidatesRunning-container,
+ .votepage-container
  {
    max-width: 400px;
    padding: 10px;
