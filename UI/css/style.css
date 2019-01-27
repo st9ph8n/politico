@@ -59,7 +59,8 @@ body {
  section.section-signUp,
  section.section-editParty,
  section.section-createParty,
- section.section-resetPassword
+ section.section-resetPassword,
+ section.section-createGovtoffice
   {
    margin-top: 50px
  }
@@ -84,7 +85,9 @@ body {
  .signUp-container,
  .editParty-container,
  .createParty-container,
- .resetPassword-container{
+ .resetPassword-container,
+ .createGovtoffice-container
+ {
    max-width: 400px;
    padding: 10px;
    width: 100%;
@@ -121,7 +124,7 @@ body {
    margin-left:5px;
  
  }
- button#resetPassword{
+ button#resetPassword,#createGovtoffice{
    width:50%
  }
  .signUp-form input {
