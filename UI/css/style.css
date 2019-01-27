@@ -32,7 +32,12 @@ li.navigation-item a {
   text-decoration: none;
 }
 
-li.navigation-item a:hover{
+li.navigation-item a:hover {
+  border-bottom: 2px solid #888;
+  color:#6eddaf
+}
+
+li.navigation-item.active { 
   border-bottom: 2px solid #888;
   color:#6eddaf
 }
@@ -50,3 +55,38 @@ button.findOut-about {
   background-color: #61c67a;
   padding: 10px
 }
+section.section-login {
+  margin-top: 50px
+}
+
+.login-container {
+  padding: 5px;
+  width: 30%;
+  height: 60%;
+  margin: 0 auto;
+  border: 2px solid #888;
+  border-radius: 5px;
+  text-align: center
+}
+
+input.form-input {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding:10px 12px;
+  margin-bottom: 15px; 
+
+}
+
+button.form-input {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  background:  #696969;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px
+}
+
