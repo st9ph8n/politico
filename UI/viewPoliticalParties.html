@@ -3,48 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Politico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | View Political Parties</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
- <header class="header">
-   <div class="logo">
-      <a href="./index.html">	
-      <span>Politico</span>
-      </a>	
-   </div>
-    <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="#">About</a></li>
-      <li class="navigation-item"><a href="#">How it works</a></li>
-      <li class="navigation-item"><a href="#">Contact</a></li>
-      <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-     </ul>
-    </nav>
+  <!-- header -->
+ <div class="logo">
+    <a href="./index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
   </header>
-   <main>
-     <section class="section-viewPoliticalParties">
-        <div class="sidenav">
-            <a href="./viewPoliticalParties.html">Political Parties</a>
-            <a href="./viewAllCanRun.html">Candidates</a>
-            <a href="./votePage.html">Vote</a>
-        </div>
-       <div class="viewPoliticalParties-container">
-        <h1 class="viewPoliticalParty-header">List of Political Parties</h1>
-        <table align="center" class="" cellpadding="10">
-          <tr>
-            <th>Party Name</th>
-            <th>Party Logo</th>
-          </tr>  
-          <tr>
-            <td>PDP</td>
-            <td><img src="images/pdp.jpeg" alt=""  ></img></td>
-          </tr>
-        </table>
-       </div>
-     </section>
-   </main>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
 
+          <li class="navigation-item"><a href="#">About</a></li>
+   
+          <li class="navigation-item"><a href="./signIn.html">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
+  <main>
+    <section  class="section-listOfCandidates" >
+      <div class="row">
+        <div class="sidenav">
+            <a href="./viewPoliticalParties.html" class="button">Political Parties</a>
+            <a href="./viewAllCanRun.html" class="button">Candidates</a>
+            <a href="./userProfile.html"class="button">User Profile</a>
+        </div>
+        <div class="candidate">
+          <table width="60%" cellpadding="5px" align="center">
+           <tr>
+            <th>Name</th>
+            <th>Headquater Address</th>
+            <th>Logo</th>
+           </tr>
+           <tr>
+             <td> APC </td>
+             <td> Number 24 John hirse Street Maitama</td>
+             <td> <img src="./images/apc.jpeg" alt=""  > </td>
+           </tr>
+           <tr>
+              <td> PDP </td>
+              <td> Number 24 John hirse Street Maitama</td>
+              <td> <img src="./images/pdp.jpeg" alt=""  > </td>
+            </tr>
+          </table>  
+        </div>
+      </div>
+    </section>
+  </main> 
+   
 </body>
 </html>

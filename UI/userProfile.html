@@ -3,47 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Politico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | Profile Page</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
- <header class="header">
-   <div class="logo">
-     <a href="./index.html"> 	
-      <span>Politico</span>
-     </a>	
-   </div>
-    <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="#">About</a></li>
-      <li class="navigation-item"><a href="#">How it works</a></li>
-      <li class="navigation-item"><a href="#">Contact</a></li>
-      <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-     </ul>
-    </nav>
+  <!-- header -->
+ <div class="logo">
+    <a href="index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
   </header>
-   <main>
-     <section class="section-Profile">
-       <div class="Profile-container">
-        <h1 class="Profile-header">I Voted </h1>
-        <table align="center" class="" cellpadding="10">
-          <tr>
-            <th> Candidate Name</th>
-            <th>Position</th>
-          </tr>  
-          <tr>
-            <td>John Doe</td>
-            <td> President</td>
-          </tr>
-          <tr>
-            <td>Jane Doe</td>
-            <td> Governor</td>
-          </tr>
-        </table>
-       </div>
-     </section>
-   </main>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
 
+          <li class="navigation-item"><a href="#">About</a></li>
+          <li class="navigation-item"><a href="./signIn.html">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
+  <main>
+    <section  class="section-listOfCandidates" >
+      <div class="row">
+        <div class="sidenav">
+            <a href="./viewPoliticalParties.html" class="button">Political Parties</a>
+            <a href="./viewAllCanRun.html" class="button">Candidates</a>
+            <a href="./userProfile.html"class="button">User Profile</a>
+        </div>
+        <div class="candidate">
+          <div class="userProfileForm">
+              <div class="userProfileContainer">
+                <h1 class="login-header">User Profile </h1>
+                 <form class="UserProfile">
+                    <img src="apc.jpeg" alt=""   >
+                    <input class="form-input" style="text-align: center"type="text"  value="John Doe"/> 
+                    <input class="form-input" type="text" style="text-align: center" value="Number 16 Okorodu rd"/>   
+                    <input class="form-input" type="text" style="text-align: center" value="john.doe@gmail.com"/>
+                    <input class="form-input" type="text" style="text-align: center" value="08122223342"/>                   
+                 </form>
+              
+                  <!-- change link to attractive bottom --> 
+              </div>
+              <div class="UServoteList">
+                  <h3 >Voted For</h3>
+                  <table  cellpadding="5px" align="center">
+                   <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Party</th>
+                   </tr>
+                   <tr>
+                     <td> John Doe </td>
+                     <td> President</td>
+                     <td> APC </td>
+                   </tr>
+                   <tr>
+                      <td> Jane Doe </td>
+                      <td> Governor</td>
+                      <td> APC </td>
+                    </tr>
+                  </table>  
+              </div>
+          </div>  
+         
+        </div>
+      </div>
+    </section>
+  </main> 
+   
 </body>
 </html>

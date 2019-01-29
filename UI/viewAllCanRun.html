@@ -3,67 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Politico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | View Candidates Running For Specific Office</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
- <header class="header">
-   <div class="logo">
-      <a href="./index.html">
-      <span>Politico</span>
-      </a>
-   </div>
-    <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="#">About</a></li>
-      <li class="navigation-item"><a href="#">How it works</a></li>
-      <li class="navigation-item"><a href="#">Contact</a></li>
-      <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-     </ul>
-    </nav>
+  <!-- header -->
+ <div class="logo">
+    <a href="./index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
   </header>
-   <main>
-     <section class="section-viewCandidatesRunning">
-       <div class="sidenav">
-         <a href="./viewPoliticalParties.html">Political Parties</a>
-         <a href="./viewAllCanRun.html">Candidates</a>
-         <a href="./votePage.html">Vote</a>
-       </div>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
 
-       <div class="viewCandidatesRunning-container">
-        <div class = "border">
-        <h1 class="viewCandidatesRunning-header">List of Candidates Running</h1>
-        <table align="center" class="" width="30px" cellpadding="5">
-          <tr>
-            <th> Candidate Name</th>
-            <th>Position</th>
-          </tr>  
-          <tr>
-            <td>John Doe</td>
-            <td> President</td>
-          </tr>
-          <tr>
-              <td>Alex carl</td>
-              <td> President</td>
-          </tr>
-          <tr>
-              <td>Mary Sue</td>
-              <td> President</td>
-            </tr>
-          <tr>
-              <td>Jane Doe</td>
-              <td> Governor</td>
-            </tr>
-            <tr>
-                <td>Earl Harden</td>
-                <td> Governor</td>
-              </tr>
-        </table>
+          <li class="navigation-item"><a href="#">About</a></li>
+          <li class="navigation-item"><a href="./signin.html">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
+  <main>
+    <section  class="section-listOfCandidates" >
+      <div class="row">
+        <div class="sidenav">
+            <a href="./viewPoliticalParties.html" class="button">Political Parties</a>
+            <a href="./viewAllCanRun.html" class="button">Candidates</a>
+            <a href="./userProfile.html"class="button">User Profile</a>
         </div>
-       </div>
-     </section>
-   </main>
-
+        <div class="candidate">
+          <table width="60%" cellpadding="5px" align="center">
+           <tr>
+            <th>Name</th>
+            <th>Office</th>
+            <th>Party</th>
+            <th>Vote</th>
+           </tr>
+           <tr>
+             <td> John Doe </td>
+             <td> President</td>
+             <td> PDP </td>
+             <td> <button type="submit"> Vote </button> </td>
+           </tr>
+           <tr>
+              <td> John Doe </td>
+              <td> President</td>
+              <td> APC </td>
+              <td> <button type="submit"> Vote </button> </td>
+            </tr>
+          </table>  
+        </div>
+      </div>
+    </section>
+  </main> 
+   
 </body>
 </html>

@@ -1,223 +1,251 @@
-body {
+ 
+ body {
   font-family: 'Avenir', sans-serif;
+  
  }
- 
- header {
-   padding: 14px 16px;
-   background-color: #f9f9ff;
-   height: 50px;
+ .main {
+   height: 150%;
  }
- .logo {
-   float: left;
-   padding: 14px 16px;
-   font-size: 40px;
-   font-weight: bold;
-   color: #61c67a;
- }
- ul.navigation-list {
-   margin: 0;
-   padding: 0;
-   list-style-type: none;
-   overflow: hidden;
-   float: right;
- }
- li.navigation-item {
-   float: left
- }
- li.navigation-item a {
-   display: block;
-   color: black;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
- }
- 
- li.navigation-item a:hover {
-   border-bottom: 2px solid #888;
-   color:#6eddaf
- }
+ .navigation-list {
+display: flex;
+overflow:hidden;
+list-style-type:none;
+padding: 0px;
+justify-content: flex-end;
+background-color: #6eddaf;
+color: #f9f9ff;
+}
 
- .logo a, a:hover{
-   text-decoration: none;
-  color: #61c67a;
- }
- 
- li.navigation-item.active { 
-   border-bottom: 2px solid #888;
-   color:#6eddaf
- }
- 
- li.navigation-item a:active{
-   color:#6eddaf
- }
- section.section-about{
-   padding: 10%;
-  background-color: #c4c4c4
- }
- section.section-login,
- section.section-signUp,
- section.section-editParty,
- section.section-createParty,
- section.section-resetPassword,
- section.section-createGovtoffice,
- section.section-ApplyCandidacy,
- section.section-viewPoliticalParties,
- section.section-viewCandidatesRunning,
- section.section-votepage,
- section.section-Profile{
-  padding: 5%;
-  background-color: #c4c4c4
- }
- button.findOut-about {
-   border-style: solid;
-   border-width: thin;
-   background-color: #61c67a;
-   padding: 10px
- }
- section.section-viewCandidatesRunning{
-   height: 300px;
- }
- section.section-login,
- section.section-signUp,
- section.section-editParty,
- section.section-createParty,
- section.section-resetPassword,
- section.section-createGovtoffice,
- section.section-ApplyCandidacy,
- section.section-viewPoliticalParties,
- section.section-viewCandidatesRunning,
- section.section-votepage,
- section.section-Profile,
- section.section-about
-  {
-   margin-top: 50px
- }
- .sidenav a{
-   display: block;
-   padding: 3px
- }
- .sidenav{
-   float: left;
-   width: 20%;
-   margin-top: 40px
- }
-
-.viewCandidatesRunning-container{
-   float: right;
-   width: 80%;
-   
- }
- .viewCandidatesRunning-container h1{
-   text-align:center;
- }
- .login-container{
-   padding: 5px;
-   width: 30%;
-   height: 60%;
-   margin: 0 auto;
-   border: 2px solid #888;
-   border-radius: 5px;
-   text-align: center
- }
- section .signUpReset{
-  display: block;
- }
- .signUpReset .sign-up{
-    padding-left: 5px
- }
- .border{
-  border: 2px solid #888;
- }
-
- label.form-input{
-   display: inline;
-   width: 140px;
-   text-align: right;
-   margin-left: 20px
- }
- select.ApplyCandidacy{
-   width: 60%;
-   text-align: center
- }
-
-
- table,th,td {
-   border:1px solid black;
-   border-collapse: collapse;
-   width: 200px;
-   height: 20px;
-   margin-bottom: 20px;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-bottom: 10px
-   
- }
- table td img {
+table,th,td {
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.UServoteList table,th,td {
+  border:1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  padding-left: 46px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+img {
   border: 3px;
-   height: 60px ;
-   width: 130px; 
- }
- table td button {
-  background: #61c67a;
- }
+  height: 60px ;
+  width: 130px;
+}
+table td img {
+ border: 3px;
+  height: 60px ;
+  width: 130px; 
+}
+table td button {
+ background: #61c67a;
+}
 
- textarea.applycandidate{
-   text-align: left;
-   margin-bottom: 15px;
- }
- .signUp-container,
- .editParty-container,
- .createParty-container,
- .resetPassword-container,
- .createGovtoffice-container,
- .ApplyCandidacy-container,
- .viewPoliticalParties-container,
- .votepage-container,
- .Profile-container
- {
-   max-width: 400px;
-   padding: 10px;
-   width: 100%;
-   height: 70%;
-   margin: 0 auto;
-   border: 2px solid #888;
-   border-radius: 5px;
-   text-align: center
- }
+.row{
+  display: flex;
+}
+
+.sidenav{
+  display:flex;
+  flex-direction: column;
+  width:10%
+}
+.userProfileForm{
+  display: flex;
+  flex-direction: column;
+}
+.sidenav a {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-right: 5px solid;
+  flex: 40%
+}
+.login-form input[type="file"]{
+  margin-left: 5px;
+}
+.candidate{
+  display: flex;
+  justify-content: center;
+  flex: 60%
+}
+li.navigation-item a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.navigation-item a:hover {
+  border-bottom: 2px solid #888;
+  color:#f9f9ff;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo span{
+  height: 50px;
+  color: #61c67a;
+  margin-bottom:0px;
+  background-color:#f9f9ff;
+  padding:14px 16px;
+  font-size:40px;
+  font-weight: bold;
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+main section.section-about {
+ display:flex;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+ /* background:  url("./NigeriaVoting.jpg"); */
+ background-size: 174px;
+ padding-top: 10px;
+}
+.SignInBtn{
+ display: flex;
+ margin-bottom: 15px;
+}
+div .sign-up{
+  margin-right: 30px;
+}
+div .frgtpass{
+  margin-left: 30px
+}
+.signUpReset{
+  margin-bottom: 10px
+}
+.signUpReset .forgtPass{
+  margin-left: 5%
+}
  
- input.form-input {
-   width: 80%;
-   margin: 0 auto;
-   display: block;
-   padding:10px 12px;
-   margin-bottom: 15px; 
- }
- input[type="file"]{
-   margin-bottom: 15px;
-   position: center;
-   
- }
- 
- button.form-input{
-   cursor: pointer;
-   width: 30%;
-   border: none;
-   background:  #696969;
-   color: #FFF;
-   margin: 0 0 5px;
-   padding: 10px;
-   font-size: 15px;
-   margin-bottom: 10px;
-   margin-left:5px;
- 
- }
- button#resetPassword,#createGovtoffice{
-   width:50%
- }
- .signUp-form input {
-   margin: 0 0 10px;
-   padding: 0;
-   width: 80%;
-   padding:10px 12px;
- }
- 
+.signUp .AlrdhaveAcc{
+  margin-left: 5%
+}
+/* .signUpReset{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.editpary-container,.createparty-container{
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  height: 80%;
+  margin: 10px auto;
+  border: 2px solid #888;
+  border-radius: 5px;
+  text-align: center;
+}
+/* .editLogo{
+ display: flex;
+ /* flex-direction: column 
+} */
+/* .editParty-container */
+.UserProfile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.politiciansContainer{
+  border: 2px solid #888;
+  text-align: center;
+  padding: 4px 9px 1px 6px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.UServoteList h3{
+  text-align: center
+}
+.UServoteList table{
+  width: 106%
+}
+.UserProfile img{
+  display: block;
+  margin: 0 auto;
+}
+UserProfile{
+  text-align: center;
+}
+.userProfileContainer{
+  border: 2px solid #888;
+  text-align: center;
+  padding: 4px 9px 1px 6px;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 80%;
+}
+.createGovtOffc-Container{
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  height: 80%;
+  margin: 10px auto;
+  border: 2px solid #888;
+  border-radius: 5px;
+  text-align: center;
+}
+.createoffice-form{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 5%
+}
+select{
+  margin-bottom:5%
+}
+.login-container{
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  height: 115%;
+  margin: 10px auto;
+  border: 2px solid #888;
+  border-radius: 5px;
+  text-align: center;
+}
+.login-form{
+  display:flex;
+  flex-direction: column;
+}
+.login-form div{
+  display: flex; 
+}
+.form-input{
+  margin-bottom:12px;
+}
+@media screen and (max-width:700px){
+  .navigation-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 433px){
+  .row{
+    flex-direction: column;
+  }
+  .sidenav{
+    flex-direction: row;
+    border-right: none;
+  }
+}
