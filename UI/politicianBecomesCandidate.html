@@ -3,49 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Politico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | Apply for Candidacy</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
- <header class="header">
-   <div class="logo">
-      <a href="./index.html">
-      <span>Politico</span>
-      <a href="./index.html">
-   </div>
-    <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="#">About</a></li>
-      <li class="navigation-item"><a href="#">How it works</a></li>
-      <li class="navigation-item"><a href="#">Contact</a></li>
-      <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-     </ul>
-    </nav>
-   </header>
-   <main>
-     <section class="section-ApplyCandidacy">
+  <!-- header -->
+ <div class="logo">
+    <a href="./index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
+  </header>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
+
+          <li class="navigation-item"><a href="#">About</a></li>
+          <li class="navigation-item"><a href="./loginAspolitician.html">Login as politician</a></li>
+         
+          <li class="navigation-item"><a href="./signIn.html">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
+  <main>
+    <section  class="section-listOfCandidates" >
+      <div class="row">
         <div class="sidenav">
-            <a href="./pviewCandidate.html">Candidates</a>
-            <a href="./politicianBecomesCandidate.html">Apply for Candidacy</a>
-            <a href="./pVote.html">Vote</a>
+            <a href="./viewPolitcalParties.html" class="button">Political Parties</a>
+            <a href="./viewAllCanRun.html" class="button">Candidates</a>
         </div>
-       <div class="ApplyCandidacy-container">
-         <h1 class="ApplyCandidacy-header">Apply for Candidacy</h1>
-         <form>
-            <select name="Position" class="ApplyCandidacy">
-                <option selected="selected" value="Select postion">select position</option>
-                <option value="President">President</option>
-                <option value="Governor">Governor</option>
-            </select>
-            <br><br>
-            <textarea placeholder=" Enter manifesto here" name="manifesto" class="applycandidate" rows="10" cols="50%" ></textarea>
+        <div class="candidate">
+            <div class="politiciansContainer">
+                <h1 class="login-header">Apply as Candidate</h1>
+                  <form class="login-form">
+                      <select name="Position" class="offcPositn">
+                          <option selected="selected" value="Select postion">Select Office</option>
+                          <option value="President">President</option>
+                          <option value="Governor">Governor</option>
+                      </select>
+                      <select name="party" class="candiParty">
+                          <option selected="selected" value="Select postion">Select Party</option>
+                          <option value="President">PDP</option>
+                          <option value="Governor">APC</option>
+                      </select>
+                      <textarea placeholder=" Enter manifesto here" name="manifesto" class="applycandidate" rows="10" cols="50%" ></textarea>
             <br \>
             <button class="form-input" type="submit"> Submit</button>
-         </form>
-       </div>
-     </section>
-   </main>
-
+                  </form>
+                  <!-- change link to attractive bottom --> 
+              </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+   
 </body>
 </html>

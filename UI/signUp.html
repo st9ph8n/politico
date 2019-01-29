@@ -3,41 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | Sign Up</title>
+  <title>Politico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-        <a href="./index.html">
-      <span>Politico</span>
-        </a>
-    </div>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">About</a></li>
-          <li class="navigation-item"><a href="#">How it works</a></li>
-          <li class="navigation-item"><a href="#">Contact</a></li>
-          <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-        </ul>
-      </nav>
+  <!-- header -->
+ <div class="logo">
+    <a href="./index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
   </header>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
+
+          <li class="navigation-item"><a href="#">About</a></li>
+          <li class="navigation-item"><a href="./loginAspolitician.html">Login as politician</a></li>
+          <li class="navigation-item"><a href="./loginasAdmin.html">Login as Admin</a></li>
+          <li class="navigation-item"><a href="./signIn.html">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
   <main>
-    <section class="section-signUp">
-      <div class="signUp-container">
-        <h1 class="signUp-header"> Registration Form</h1>
-        <form class="signUp-form">
-            <input type="text" class="firstName" name="firstName" placeholder="your first name">
-            <input type="text" class="lastName" name="lastName"  placeholder="Your last name">
-            <input type="text" class="emailAddress"  placeholder="Your email address">
-           <input type="password" class="password"  placeholder="Password">
-           <input type="password" class="confirm_password"  placeholder="Confirm Password">
-	   <a href="./viewAllCanRun.html" class="signUpbtn">SignUp</a>
+    <section  class="section-about">
+      <div class="login-container">
+          <h1 class="login-header">Sign Up</h1>
+            <form class="login-form">
+              <input class="form-input" type="text" placeholder="First Name" value=""/>
+              <input class="form-input" type="text" placeholder="Last Name" value=""/>
+              <input class="form-input" type="text" placeholder="Other Name" value=""/>
+              <input class="form-input" type="text" placeholder="Email" value=""/>
+              <input class="form-input" type="text" placeholder="Phone Number" value=""/>
+              <input class="form-input" type="password"  placeholder="Password" />
+              <input class="form-input" type="password"  placeholder="Confirm Password" />
+              <div>
+              <label class="form-input">Select Passport</label>
+                    <input type="file" name="fileUpload" accept="image/*"  placeholder="select party brand" /></br>
+              
+              </div>
+            </form>
+            <!-- change link to attractive bottom -->
          
-        </form>
-        <a href="./signIn.html">Aleardy have an account?</a>
-      </div>
+            <div class="signUp">
+            <a class="button"href="#" >Sign-up</a>
+            <a href="./signIn.html" class="AlrdhaveAcc"> Aleardy have an account?</a>
+            </div>
+            
+        </div>
     </section>
-  </main>
+  </main> 
+   
 </body>
 </html>

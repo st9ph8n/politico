@@ -3,42 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Politico</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Politico | Create Government Office</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
 </head>
 <body>
- <header class="header">
-   <div class="logo">
-     <a href="./index.html">	
-      <span>Politico</span>
-     </a>	
-   </div>
-    <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="#">About</a></li>
-      <li class="navigation-item"><a href="#">How it works</a></li>
-      <li class="navigation-item"><a href="#">Contact</a></li>
-      <li class="navigation-item active"><a href="./signIn.html">Login</a></li>
-     </ul>
-    </nav>
-   </header>
-   <main>
-     <section class="section-createGovtoffice">
-        <div class="sidenav">
-            <a href="./createGovtOffice.html">Create Government Office</a>
-            <a href="./createPoliticalparty.html">Create Political Party</a>
-            <a href="./editPoliticalParty.html">Edit Political party</a>
-          </div>
-       <div class="createGovtoffice-container">
-         <h1 class="createGovtoffice-header">Create Government office</h1>
-         <form>
-            <input class="form-input" type="text" placeholder="Name of position"/>
-            <button class="form-input" type="submit" id="createGovtoffice">Create Government office</button>
-         </form>
-       </div>
-     </section>
-   </main>
+  <!-- header -->
+ <div class="logo">
+    <a href="./index.html">
+      <span> Politico </span>
+    </a>
+  </div> 
+  </header>
+  <!-- navigation --> 
+  <div class="nav">
+      <ul class="navigation-list">
 
+          <li class="navigation-item"><a href="#">About</a></li>
+          <li class="navigation-item"><a href="#">Login as politician</a></li>
+          <li class="navigation-item"><a href="#">Login as Admin</a></li>
+          <li class="navigation-item"><a href="">Login</a></li> 
+      </ul>
+  </div>  
+  <!-- main content -->
+  <main>
+    <section  class="section-listOfCandidates" >
+      <div class="row">
+        <div class="sidenav">
+            <a href="./createGovtOffice.html" class="button">Create Government Office</a>
+            <a href="./createPoliticalparty.html"class="button">Create Political Party</a>
+            <a href="./editPoliticalParty.html"class="button">Edit political party</a>
+        </div>
+        <div class="candidate">
+            <div class="createGovtOffc-Container">
+                <h1 class="login-header">Create Government Office </h1>
+                  <form class="createoffice-form">
+                      <select name="Position" class="offcPositn">
+                          <option selected="selected" value="Select postion">Select type of Office</option>
+                          <option value="President">Federal</option>
+                          <option value="Governor">Legislative</option>
+                          <option value="President">State</option>
+                      </select>
+                      <select name="party" class="candiParty">
+                          <option selected="selected" value="Select postion">Name of Office</option>
+                          <option value="President">President</option>
+                          <option value="Governor">Governor</option>
+                          <option value="Governor">Senator</option>
+                      </select>
+                     
+                  </form>
+                  <a class="button"href="#" >Create office</a>
+                  <!-- change link to attractive bottom --> 
+              </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+   
 </body>
 </html>
